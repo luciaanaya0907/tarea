@@ -2,12 +2,12 @@ const button = document.getElementById('btn-modo');
 const formulario = document.getElementById('form-contacto');
 const mensaje = document.getElementById('mensaje-confirmacion');
 
-if (!boton) {
+if (!button) {
   console.error('No se encontró el botón con id "btn-modo". Revisa el HTML.');
 }
 
 // ===== Evento: click - alternar tema claro/oscuro =====
-boton.addEventListener('click', function () {
+button.addEventListener('click', function () {
   document.body.classList.toggle('modo-oscuro');
   console.log('Tema cambiado. Modo oscuro activo:', document.body.classList.contains('modo-oscuro'));
 });
